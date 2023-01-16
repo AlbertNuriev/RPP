@@ -18,27 +18,16 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             RPPTheme {
-                Scaffold(topBar = {
-                    TopAppBar(
-                        title = {
-                            Text(text = "RPP try 2")
-                        },
-                        backgroundColor = Color.Black,
-                        contentColor = Color.White,
-                        elevation = 12.dp
-                    )
-                }, content = {
                     Surface(
                         modifier = Modifier.fillMaxSize(),
                         color = MaterialTheme.colors.background
                     ) {
                         NotesNavHost()
                     }
-                })
+                }
             }
         }
     }
-}
 
 
 @Preview(showBackground = true)
